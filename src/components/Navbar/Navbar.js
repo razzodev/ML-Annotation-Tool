@@ -1,8 +1,8 @@
 import React from "react";
 import "./Navbar.css";
-import { Link, NavLink } from "react-router-dom";
-import { isLoggedInAdmin, isLoggedInRegular, deleteTokens } from "../Auth.js";
-import UserOptions from ".././UserOptions/UserOptions.js";
+import { Link } from "react-router-dom";
+import { isLoggedInRegular } from "../Auth.js";
+// import UserOptions from ".././UserOptions/UserOptions.js";
 
 export default class Navbar extends React.Component {
   constructor(props) {
@@ -13,7 +13,7 @@ export default class Navbar extends React.Component {
     };
   }
   render() {
-    const { adminUser, regularUser } = this.state;
+    // const { adminUser, regularUser } = this.state;
     return (
       <div className="header">
         <Link to="/" className="appname">

@@ -1,85 +1,84 @@
 .toolbar__field--wrapper {
-	display: flex;
-	/* flex-direction: column; */
-	justify-content: stretch;
-	align-items: flex-start;
-	margin-top: 26px;
-	box-sizing: border-box;
-	padding-top: 10px;
-	background-color:#9CABCA;
-	border-radius: 5px;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: stretch;
+  align-items: flex-start;
+  margin-top: 26px;
+  box-sizing: border-box;
+  padding-top: 10px;
+  background-color: #9cabca;
+  border-radius: 5px;
 }
 
 .toolbar-field__wrapper {
-    margin:0 10px 10px 0;
-    height: fit-content;
-	overflow-y: auto;
-	overflow-x: hidden;
-	padding: 10px;
-	
+  margin: 0 10px 10px 0;
+  height: fit-content;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px;
 }
 
 .tbField--inner {
-	padding: 10px;
-	/* padding-top:20px; */
-	background-color: #FFFFFF;
-	width:100%;
-	border-radius: 0 0 5px 5px;
+  padding: 10px;
+  /* padding-top:20px; */
+  background-color: #ffffff;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
 }
 .tbInput {
-	border: 1px solid #929292;
-	border-radius: 5px;
-	height: 30px;
-	padding-left: 10px;
-	/* margin: 15px; */
-	text-align: start;
-	font-size: 14px;
+  border: 1px solid #929292;
+  border-radius: 5px;
+  height: 30px;
+  padding-left: 10px;
+  width: 100%;
+  /* margin: 15px; */
+  text-align: start;
+  font-size: 14px;
 }
 
 input:focus {
-	box-shadow: inset -2px -2px 4px rgba(0,0,0,0.1), inset 2px 2px 4px rgba(0,0,0,0.1);
-	
-  }
+  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.1),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
 
 .tbInput.doc-name {
-	width: 100%;
-	flex-basis: 260%;
-
+  width: 100%;
+  flex-basis: 260%;
 }
 .tbField-select {
-	appearance: none;
-	padding-left: 10px;
-	background-color: white;
-	width: 100%;
-    height: 30px;
-    margin: 0;
-	border-radius: 5px;
-	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTk5LjQwNHB4IiBoZWlnaHQ9IjE5OS40MDRweCIgdmlld0JveD0iMCAwIDE5OS40MDQgMTk5LjQwNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTk5LjQwNCAxOTkuNDA0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PHBvbHlnb24gcG9pbnRzPSIxOTkuNDA0LDYzLjk5MyAxNzEuMTIsMzUuNzA5IDk5LjcwMiwxMDcuMTI3IDI4LjI4NCwzNS43MDkgMCw2My45OTMgOTkuNzAyLDE2My42OTUgIi8+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjwvc3ZnPg==);
-	background-repeat: no-repeat;
-	background-position-x: calc(100% - 10px);
-	background-position-y: center;
-	background-size: 8px;
-	font-size: 14px;
+  appearance: none;
+  padding-left: 10px;
+  background-color: white;
+  width: 100%;
+  height: 30px;
+  margin: 0;
+  border-radius: 5px;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTk5LjQwNHB4IiBoZWlnaHQ9IjE5OS40MDRweCIgdmlld0JveD0iMCAwIDE5OS40MDQgMTk5LjQwNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTk5LjQwNCAxOTkuNDA0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PHBvbHlnb24gcG9pbnRzPSIxOTkuNDA0LDYzLjk5MyAxNzEuMTIsMzUuNzA5IDk5LjcwMiwxMDcuMTI3IDI4LjI4NCwzNS43MDkgMCw2My45OTMgOTkuNzAyLDE2My42OTUgIi8+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjwvc3ZnPg==);
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 10px);
+  background-position-y: center;
+  background-size: 8px;
+  font-size: 14px;
 }
 .toolbar__field--wrapper.active {
-	background-color: #173751;
+  background-color: #173751;
 }
 
 .tbField-select--wrapper {
-	/* text-align: start; */
-	display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  /* text-align: start; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .tbField--top {
-    display: flex;
-justify-content: flex-end;
-font-size: 12px;
-margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 12px;
 }
 
 .tbField--top > span {
-    cursor: pointer;
-    margin-left: 5px;
+  cursor: pointer;
+  margin-left: 5px;
 }
