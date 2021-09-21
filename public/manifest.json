@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "ML-tool",
+  "name": "ML-Annotation-tool",
   "icons": [
     {
       "src": "favicon.ico",
