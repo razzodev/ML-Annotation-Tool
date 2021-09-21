@@ -1,19 +1,14 @@
 import React, { useEffect, useRef, useState, useCallback } from "react";
 import ReactDOM from "react-dom";
-import { addNewForm, updateForm } from "../lib/api";
-import { useStoreState } from "pullstate";
+// import { addNewForm, updateForm } from "../lib/api";
 import { NewForm } from "../formai_states";
 import "./promptModalStyle.css";
 import { consoleJSON } from "../hooks/CustomHooks";
 const portalRoot = document.getElementById("portalRoot");
 
 function SendFormModal({ itemToRemove, altText, reset, exit }) {
-  const myForm = useStoreState(NewForm);
-  const formName = useStoreState(NewForm, (s) => s.name);
-  //   const pdf_file = useStoreState(NewForm, (s) => s.pdf_file);
-  const fields = useStoreState(NewForm, (s) => s.fields);
-  //   const activeField = useStoreState(NewForm, (s) => s.activeField);
-  const edit = useStoreState(NewForm, (s) => s.edit);
+  const formName = NewForm.useState((s) => s.name);
+  const fields = NewForm.useState((s) => s.fields);
   const [myFormName, setMyFormName] = useState(formName);
   const $overlay = useRef();
 
@@ -24,14 +19,13 @@ function SendFormModal({ itemToRemove, altText, reset, exit }) {
     exit();
   }
   const handleSendForm = useCallback(async () => {
-    NewForm.update((s) => {
-      NewForm.update((s) => {
-        s.name = myFormName;
-      });
+    await NewForm.update((s) => {
+      s.name = myFormName;
     });
-    edit ? updateForm(myForm) : addNewForm(myForm);
+    // edit ? updateForm(myForm) : addNewForm(myForm);
+    consoleJSON(fields);
     exit();
-  }, [exit, myFormName, edit, myForm]);
+  }, [exit, myFormName, fields]);
 
   const eventKeys = useCallback(
     (e) => {
@@ -47,7 +41,6 @@ function SendFormModal({ itemToRemove, altText, reset, exit }) {
   useEffect(
     (e) => {
       window.addEventListener("keydown", eventKeys);
-      consoleJSON(fields);
       return () => {
         window.removeEventListener("keydown", eventKeys);
       };

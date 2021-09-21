@@ -51,11 +51,9 @@ function OverviewPDF({ width, height }) {
   }
   function addKonva(page) {
     const LABEL_OFFSET = 18;
-    console.log("add konva ran");
     if (activeField) {
       const myNode = ReactDOM.findDOMNode(pagesRef.current[page]);
       const myNodePosition = myNode.getBoundingClientRect();
-      console.log(myNodePosition);
       return Object.keys(fields).map((item) =>
         fields[item].page === currentPage ? (
           <Group

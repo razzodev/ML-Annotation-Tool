@@ -1,4 +1,5 @@
 import axios from "axios";
+import { consoleJSON } from "../hooks/CustomHooks";
 export const hostname = window.location.hostname;
 
 const baseUrl = `http://${hostname}:5000`;
@@ -30,21 +31,21 @@ const baseUrl = `http://${hostname}:5000`;
 // }
 
 export function addNewForm(newForm) {
-  return axios({
-    method: "put",
-    url: `${baseUrl}/add_new_form`,
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-      withCredentials: true,
-      credentials: "same-origin",
-    },
-
-    proxy: {
-      host: "0.0.0.0",
-      port: 5000,
-    },
-    data: newForm,
-  });
+  // return axios({
+  //   method: "put",
+  //   url: `${baseUrl}/add_new_form`,
+  //   headers: {
+  //     "Access-Control-Allow-Origin": "*",
+  //     withCredentials: true,
+  //     credentials: "same-origin",
+  //   },
+  //   proxy: {
+  //     host: "0.0.0.0",
+  //     port: 5000,
+  //   },
+  //   data: newForm,
+  // });
+  // consoleJSON(newForm);
 }
 export function updateForm(newForm) {
   return axios({

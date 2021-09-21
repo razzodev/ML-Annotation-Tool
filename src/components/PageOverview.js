@@ -123,7 +123,6 @@ function PageComp({ pageNum, pageWidth }) {
     <div
       className="pdf-overview__page--wrapper"
       onClick={() => {
-        console.log(Object.keys(fields).length);
         NewForm.update((s) => {
           s.currentPage = pageNum;
         });

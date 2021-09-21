@@ -32,6 +32,16 @@
   text-align: start;
   font-size: 14px;
 }
+.tbInput-checkbox {
+  border: 1px solid #929292;
+  border-radius: 5px;
+  height: 16px;
+  padding-left: 10px;
+  width: 15px;
+  text-align: start;
+  font-size: 14px;
+  align-self: flex-end;
+}
 
 input:focus {
   box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.1),

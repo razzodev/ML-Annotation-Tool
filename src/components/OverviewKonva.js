@@ -17,11 +17,9 @@ export default function OverviewKonva({ width, height, _canvas }) {
   }
   function addKonva() {
     const LABEL_OFFSET = 18;
-    console.log("add konva ran");
     if (activeField) {
       const myNode = ReactDOM.findDOMNode($canvas.current);
       const myNodePosition = myNode.getBoundingClientRect();
-      console.log(myNodePosition);
       return Object.keys(fields).map((item) =>
         fields[item].page === currentPage ? (
           <Group>

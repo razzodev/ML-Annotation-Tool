@@ -60,7 +60,6 @@ function KonvaCanvas({ width, height }) {
       ).getBoundingClientRect();
       const newX = (e.clientX - myNode.left) / myNode.width;
       const newY = (e.clientY - myNode.top) / myNode.height;
-      console.log(newX, newY);
       NewForm.update((s) => {
         s.activeField.loc.x1 = newX;
         s.activeField.loc.y1 = newY;
@@ -91,7 +90,6 @@ function KonvaCanvas({ width, height }) {
   }, [clickCanvas]);
   // ======================== UPDATE ==========================
   async function updateActive(item) {
-    console.log("updated");
     removeListener();
     NewForm.update((s) => {
       s.activeField = fields[item];

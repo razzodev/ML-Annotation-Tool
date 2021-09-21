@@ -189,17 +189,32 @@ export default function ToolbarField({ item }) {
             {fieldType === "boolean" && (
               <label style={{ margin: "14px 3px 3px 4px" }}>value:</label>
             )}
-            <input
-              style={{ marginTop: "10px" }}
-              className="tbInput"
-              type={fieldType === "boolean" ? "checkbox" : "text"}
-              placeholder="value"
-              value={fieldValue}
-              onChange={(e) => {
-                setFieldValue(e.target.value);
-                updateProperty(e, "value");
-              }}
-            />
+            {fieldType === "boolean" && (
+              <input
+                style={{ marginTop: "10px" }}
+                className="tbInput-checkbox"
+                type="checkbox"
+                placeholder="value"
+                value={fieldValue}
+                onChange={(e) => {
+                  setFieldValue(e.target.value);
+                  updateProperty(e, "value");
+                }}
+              />
+            )}
+            {fieldType !== "boolean" && (
+              <input
+                style={{ marginTop: "10px" }}
+                className="tbInput"
+                type="text"
+                placeholder="value"
+                value={fieldValue}
+                onChange={(e) => {
+                  setFieldValue(e.target.value);
+                  updateProperty(e, "value");
+                }}
+              />
+            )}
           </div>
         </div>
       </div>
