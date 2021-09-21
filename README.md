@@ -1,5 +1,9 @@
 # A machine learning annotation tool - UI only
 
+Deployed to **Vercel**
+<br>
+[https://ml-annotation-tool-razzodev.vercel.app/](https://ml-annotation-tool-razzodev.vercel.app/)
+
 ## 1. upload file
 
 upload a .PDF file by clicking on the screen or by 'drag-and-drop'
