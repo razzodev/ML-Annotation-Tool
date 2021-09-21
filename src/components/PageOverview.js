@@ -1,17 +1,15 @@
 // node_modules
 import ReactDOM from "react-dom";
 
-import { Document, Page } from "react-pdf/dist/entry.webpack";
+import { pdfjs, Document, Page } from "react-pdf";
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { Stage, Layer, Rect } from "react-konva";
-// import 'react-pdf/dist/Page/AnnotationLayer.css';
-// import './Sample.less';
 // states
 import { useStoreState } from "pullstate";
 import { NewForm } from "../formai_states";
 // comps / funcs / css
-
 import "./pageOverviewStyle.css";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const PAGE_WIDTH = 130;
 // const PAGE_HEIGHT = PAGE_WIDTH * 1.414;

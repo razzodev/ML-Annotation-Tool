@@ -1,10 +1,4 @@
 import React, { useEffect } from "react";
-// import { Document, Page } from "react-pdf/dist/entry.webpack";
-// import 'react-pdf/dist/Page/AnnotationLayer.css';
-
-// import { log } from 'fabric/fabric-impl';
-// import Konva from "konva";
-// import { Stage, Layer, Rect, Text } from "react-konva";
 import { useStoreState } from "pullstate";
 import { NewForm } from "../formai_states";
 import PreviewPDF from "./PreviewPDF";

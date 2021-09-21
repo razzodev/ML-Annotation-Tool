@@ -1,13 +1,14 @@
 import ReactDOM from "react-dom";
-import React, { useEffect, useRef, useState } from "react";
-import { Document, Page } from "react-pdf/dist/entry.webpack";
+import React, { useCallback, useEffect, useRef, useState } from "react";
+import { pdfjs, Document, Page } from "react-pdf";
 import { Stage, Layer, Transformer, Group, Rect, Text } from "react-konva";
-
 // import 'react-pdf/dist/Page/AnnotationLayer.css';
 // import './Sample.less';
 import { useStoreState } from "pullstate";
 import { NewForm } from "../formai_states";
 // import OverviewKonva from "./OverviewKonva";
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const pdf_options = {
   cMapUrl: "cmaps/",
@@ -32,9 +33,9 @@ function OverviewPDF({ width, height }) {
       s.numPages = numPages;
     });
   }
-  function toggleActive() {
+  const toggleActive = useCallback(() => {
     for (let i = 1; i <= numPages; i++) {
-      if (i == currentPage) {
+      if (i === currentPage) {
         document
           .getElementById(`pdf-overview__page_${i}`)
           .classList.add("active");
@@ -43,7 +44,7 @@ function OverviewPDF({ width, height }) {
           .getElementById(`pdf-overview__page_${i}`)
           .classList.remove("active");
     }
-  }
+  }, [numPages, currentPage]);
 
   function loadCanvas(page) {
     return <Layer>{addKonva(page)}</Layer>;
@@ -99,7 +100,7 @@ function OverviewPDF({ width, height }) {
     pagesRef.current = pagesRef.current.slice(0, numPages + 1);
     toggleActive();
     return () => {};
-  }, [numPages, pagesRef, currentPage]);
+  }, [numPages, pagesRef, currentPage, toggleActive]);
   return (
     <Document
       className="pdf-overview__doc"
