@@ -1,0 +1,26 @@
+.create__preview {
+	/* flex-grow: 1; */
+	/* display: flex; */
+	flex-direction: column;
+	/* margin-top: 30px; */
+	margin-inline-start: -150px; /* MUST REFACTOR!!! */
+	/* align-items: center; */
+	justify-self: center;
+	flex-basis: 50%;
+	width: 80%;
+	/* min-height: var(--height); */
+}
+
+.pdf-preview__doc {
+	display: inline;
+	flex-direction: column;
+	align-items: center;
+}
+
+.pdf-preview__page > div {
+	display: none;
+}
+
+#konvaStage {
+    position: absolute;
+}

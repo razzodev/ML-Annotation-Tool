@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+
+:root {
+	--height: calc(87vh);
+	--panelHeight: 95%;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+}
+
+.App {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.pageBody {
+  height: 94vh;
+}
+
+input,select,button,textarea {
+  box-sizing: border-box;
+}
+
+
+select {
+  font-size: 40px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #D9DFED;
+  border-radius: 30px;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #C5CEE2;
+  border-radius: 30px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

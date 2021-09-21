@@ -1,0 +1,34 @@
+#pdfArea {
+height:100%;
+overflow-y: auto; 
+}
+/* width */
+iframe::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  iframe::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  iframe::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+  }
+
+  body {
+    scrollbar-face-color: #ff8c00;
+    scrollbar-track-color: #fff8dc;
+    scrollbar-arrow-color: #ffffff;
+    scrollbar-highlight-color: #fff8dc;
+    scrollbar-shadow-color: #d2691e;
+    scrollbar-3dlight-color: #ffebcd;
+    scrollbar-darkshadow-color: #8b0000;
+    }
+
+    .react-pdf_Page {
+      justify-content: center;
+    }

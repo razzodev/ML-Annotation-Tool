@@ -1,0 +1,65 @@
+.header {
+    background-color: #173751;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 12;
+    min-width: 775px;
+    position: relative;
+}
+
+.navbar { 
+    color: rgb(255,255,255,0.6);
+    font-size:16px;
+    text-decoration: none;
+    padding: 10px;
+}
+  
+.navbar:hover {
+    color: white;
+}
+
+.active-links {
+    color: white;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+.appname {
+    background-color: #33B7C5;
+    color: white;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    padding: 9px 15px;
+    margin-left: 20px;
+    position: absolute;
+    left: 0px;
+    text-decoration: none;
+}
+
+.login{
+    color: #173751;
+    background-color: #33B7C5;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    position: absolute;
+    right: 0px;
+    text-decoration: none;
+    top: 12px;
+}
+
+.login:hover{
+    color:white;
+}
+
+.centerNavLinks{
+    display: flex;
+    justify-content: center;
+}
+

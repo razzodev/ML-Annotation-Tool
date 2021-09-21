@@ -1,0 +1,25 @@
+.upload-container {
+	height: calc(100vh - 85px);
+	width: 100vw;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.upload-container.over {
+	background-color: rgba(169, 184, 231, 0.3);
+}
+
+.plus {
+	background: #33b7c5;
+	color: white;
+	margin-top: 30vh;
+	padding: 15px;
+	border-radius: 50%;
+	box-sizing: content-box;
+}
+
+.uploadTxt {
+	margin-top: 15px;
+}

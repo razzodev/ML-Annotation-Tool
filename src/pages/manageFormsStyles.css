@@ -1,0 +1,20 @@
+.manage-forms-page {
+    /* height: 94vh; */
+    /* display: flex; */
+}
+
+.manageAgGrid--wrapper {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    height: 300px;
+    max-height: 100%;
+    transition: max-height 0.7s ease-out;
+}
+
+.manageAgGrid--wrapper.gridWithEditor {
+    max-height:50%
+}
+.formEditor--wrapper {
+    /* position: absolute; */
+}

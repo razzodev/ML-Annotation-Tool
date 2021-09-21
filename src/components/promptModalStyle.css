@@ -1,0 +1,41 @@
+.promptModal__overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.514);
+    top:0;
+    right:0;
+    bottom: 0;
+    left:0;
+  }
+  
+  .promptModal__body {
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40%;
+    width: 30%;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.514);
+  z-index: 100}
+  
+  .promptModal-button {
+    /* padding:0 60px; */
+      width: 100%;
+      text-align: center;
+      height: 30px;
+      border-radius: 5px;
+      vertical-align: sub;
+      margin-top: 15px;
+    cursor: pointer;
+    z-index: 1234;
+   
+  }
+  .promptModal-button > span {
+    vertical-align: sub;
+    font-size: 12px;
+    margin: 0 130px;
+  }
