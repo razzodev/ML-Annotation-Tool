@@ -21,7 +21,7 @@
     "react-dom": "^16.12.0",
     "react-dropzone": "^10.2.1",
     "react-konva": "^16.12.0-0",
-    "react-pdf": "^4.1.0",
+    "react-pdf": "^5.3.2",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^3.4.0",
     "start": "^5.1.0"
@@ -42,7 +42,7 @@
       "not dead",
       "not op_mini all"
     ],
-  "development": [
+    "development": [
       ">0.3%",
       "not ie 11",
       "not dead",
