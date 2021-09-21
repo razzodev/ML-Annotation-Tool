@@ -2,7 +2,7 @@
 
 Deployed to **Vercel**
 <br>
-[https://ml-annotation-tool-razzodev.vercel.app/](https://ml-annotation-tool-razzodev.vercel.app/)
+[https://ml-annotation-tool.vercel.app/](https://ml-annotation-tool.vercel.app/)
 
 ## 1. upload file
 
