@@ -13,8 +13,8 @@ export class ToolbarItem {
       x2: 0,
       y2: 0,
     };
-    // this.historyState = null;
-    // this.history = [];
+    this.historyState = null;
+    this.history = [];
   }
 }
 

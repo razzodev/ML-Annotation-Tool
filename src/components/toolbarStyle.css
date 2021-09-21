@@ -3,27 +3,21 @@
   flex-direction: column;
   position: absolute;
   right: 0%;
-  /* height: var(--height); */
   display: flex;
   flex-basis: 20%;
   width: 25%;
   max-width: 400px;
   height: var(--panelHeight);
-  /* float: right; */
-  /* overflow-y: scroll; */
 }
 .toolbar__wrapper {
   border-radius: 5px;
   overflow-y: unset;
   overflow-x: hidden;
-  /* padding: 20px; */
   flex-grow: 1;
   height: var(--panelHeight);
   background-color: #e5ebf7;
   display: flex;
   flex-direction: column;
-
-  /* box-shadow: -4px 4px 8px rgba(47, 47, 47, 0.15); */
 }
 
 .toolbar__header {
@@ -33,14 +27,12 @@
   background-color: #e4ebf7;
   box-shadow: -2px 0 6px rgba(0, 0, 0, 0.25);
   text-align: start;
-  /* margin: 10px; */
   padding: 15px;
   z-index: 1;
   align-items: baseline;
 }
 
 .submit-wrapper {
-  /* justify-content: flex-end; */
   display: flex;
   justify-content: space-between;
 }

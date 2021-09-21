@@ -44,7 +44,6 @@ function SendFormModal({ itemToRemove, altText, reset, exit }) {
     },
     [exit, handleSendForm]
   );
-  //   function removeKeyListener() {}
   useEffect(
     (e) => {
       window.addEventListener("keydown", eventKeys);
@@ -75,17 +74,6 @@ function SendFormModal({ itemToRemove, altText, reset, exit }) {
         )}
         <div>Send {formName ? formName : myFormName} to database?</div>
         <div style={{ width: "80%" }}>
-          {/* <div
-						onClick={handleCancel}
-						className="promptModal-button cancelButton">
-						<span>Cancel</span>
-					</div> */}
-          {/* <div
-						
-						onClick={handleSendForm}
-						className="promptModal-button okButton">
-						<span>OK</span>
-					</div> */}
           <button
             onClick={handleCancel}
             className="promptModal-button cancelButton"

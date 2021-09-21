@@ -1,8 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import { Document, Page } from "react-pdf/dist/entry.webpack";
-// import 'react-pdf/dist/Page/AnnotationLayer.css';
-
-// import { log } from 'fabric/fabric-impl';
 import { useStoreState } from "pullstate";
 import { NewForm } from "../formai_states";
 

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import ReactDOM from "react-dom";
 // import Konva from "konva";
 import { Stage, Layer, Transformer, Group, Rect, Text } from "react-konva";
@@ -24,11 +24,7 @@ export default function OverviewKonva({ width, height, _canvas }) {
       console.log(myNodePosition);
       return Object.keys(fields).map((item) =>
         fields[item].page === currentPage ? (
-          <Group
-
-          // onDragStart={() => dragHandler()}
-          // onDragEnd={e => canvasListener(e)}
-          >
+          <Group>
             <Rect
               key={"rect" + new Date().getTime()}
               x={fields[item].loc.x1 * myNodePosition.width}
@@ -43,8 +39,6 @@ export default function OverviewKonva({ width, height, _canvas }) {
               }
               stroke={"#173751"}
               strokeWidth={width / 150}
-              // fill={'#0a0a0a'}
-              // shadowBlur={2}
               cornerRadius={3}
             />
             <Text

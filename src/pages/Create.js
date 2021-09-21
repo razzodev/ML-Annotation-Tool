@@ -6,25 +6,10 @@ import PagePreview from "../components/PagePreview.js";
 import DragAndDropEl from "../components/DragAndDropEl.js";
 import { useStoreState } from "pullstate";
 import { NewForm, formObj, resetFormState } from "../formai_states";
-// import { getForm } from "../lib/api.js";
 import "./create.css";
-// import pdfjsLib from "pdfjs-dist/build/pdf";
 
 export default function Create({ form }) {
   const doc = useStoreState(NewForm, (s) => s.pdf_file);
-
-  //   function loadExsistingForm() {
-  //     if (form) {
-  //       const base64 = form.base64; //.slice(28)
-  //       const file = dataURLtoFile(base64, "myFormExample.pdf");
-  //       form.pdf_file = file;
-  //       form.activeField = null;
-  //       form.lastChange = null;
-  //       form.currentPage = 1;
-  //       form["edit"] = true;
-  //       resetFormState(form);
-  //     }
-  //   }
   function dataURLtoFile(dataurl, filename) {
     var arr = dataurl.split(","),
       mime = arr[0].match(/:(.*?);/)[1],
@@ -37,7 +22,6 @@ export default function Create({ form }) {
     return new File([u8arr], filename, { type: mime });
   }
   useEffect(() => {
-    // loadExsistingForm();
     if (form) {
       const base64 = form.base64; //.slice(28)
       const file = dataURLtoFile(base64, "myFormExample.pdf");
